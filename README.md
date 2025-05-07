@@ -9,7 +9,6 @@ For detailed architecture diagrams and risk registers, please refer to the attac
 ✔️ Threat modeling & risk assessment  
 ✔️ Full security stack deployment (WAF/SIEM/EDR)  
 ✔️ Compliance automation (ISO 27001/GDPR/NIS2)  
-✔️ CI/CD-integrated security testing  
 
 ---
 ##  Technical Implementation
@@ -30,6 +29,7 @@ sudo a2enmod security2  # ModSecurity WAF
 ```powershell
 # Patch Deployment:
 Install-WindowsUpdate -KB4013389 -Force
+✔️ CI/CD-integrated security testing  
 ```
 
 ### 2. Security Architecture
@@ -107,10 +107,5 @@ index=firewall src_ip="45.33.12.*" action="blocked" | stats count by dest_port
 - **Reduced exploit surface** by 78% via WAF + patching  
 - **Automated 23 compliance controls** for ISO 27001  
 - **Detected 15+ critical vulnerabilities** pre-production  
-
----
-
-![FinTrade Security Architecture](assets/architecture.png)  
-*Layered defenses with real-world tool integration*
 
 ---
